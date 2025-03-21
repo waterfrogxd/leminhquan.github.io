@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forspoken - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game12.jpg" alt="Forspoken">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/forspoken_1.jpg" alt="Forspoken Screenshot 1">
+                    <img src="img/forspoken_2.jpg" alt="Forspoken Screenshot 2">
+                    <img src="img/forspoken_3.jpg" alt="Forspoken Screenshot 3">
+                    <img src="img/forspoken_4.jpg" alt="Forspoken Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Forspoken</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="original-price">1.399.000đ</span>
+                        <span class="price">999.000đ</span>
+                        <span class="discount">-29%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Forspoken là một game hành động phiêu lưu thế giới mở, nơi bạn vào vai Frey Holland - một cô gái trẻ đến từ New York bị cuốn vào thế giới kỳ ảo Athia. Với sự giúp đỡ của chiếc vòng tay ma thuật có ý thức tên Cuff, Frey phải học cách sử dụng các năng lực phép thuật mới để sống sót và tìm đường về nhà.</p>
+                    <p>Trong hành trình của mình, Frey sẽ phải đối mặt với những sinh vật nguy hiểm, khám phá vùng đất bí ẩn và đối đầu với những Tantas - những phù thủy quyền năng từng là người bảo vệ của Athia nhưng giờ đã trở nên điên loạn và tàn bạo.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hệ thống parkour ma thuật độc đáo</li>
+                        <li><i class="fas fa-check"></i> Chiến đấu với phép thuật đa dạng và sáng tạo</li>
+                        <li><i class="fas fa-check"></i> Thế giới mở rộng lớn với nhiều bí mật</li>
+                        <li><i class="fas fa-check"></i> Đồ họa next-gen ấn tượng</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện hấp dẫn với các nhân vật đặc sắc</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: AMD Ryzen 5 1600 hoặc Intel Core i7-3770</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: AMD Radeon RX 5500 XT 8GB hoặc NVIDIA GeForce GTX 1060 6GB</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 150 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: AMD Ryzen 5 3600 hoặc Intel Core i7-8700K</li>
+                                <li>RAM: 24 GB</li>
+                                <li>GPU: AMD Radeon RX 6700 XT hoặc NVIDIA GeForce RTX 3070</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 150 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(21, 'Forspoken', 999000, 1399000, '/images/game21.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

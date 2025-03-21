@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cung cấp game bản quyền hàng đầu</title>
+    <link rel="stylesheet" href="/css/game-site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="main.html">TRANG CHỦ</a>
+                <a href="game-site.html" class="active">CỬA HÀNG</a>
+                <a href="game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="filter-section">
+            <select id="sort-by" onchange="sortGames(this.value)">
+                <option value="default">Mặc định</option>
+                <option value="price-low">Giá thấp đến cao</option>
+                <option value="price-high">Giá cao đến thấp</option>
+                <option value="name">Theo tên</option>
+            </select>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+            <!-- Game 1 -->
+            <div class="game-card">
+                <img src="images/game1.jpg" alt="Cyberpunk 2077">
+                <div class="game-info">
+                    <h3>Cyberpunk 2077</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">2.598.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-50%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/cyberpunk2077.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card">
+                <img src="images/game2.jpg" alt="Red Dead Redemption 2">
+                <div class="game-info">
+                    <h3>Red Dead Redemption 2</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.427.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/rdr2.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card">
+                <img src="images/game3.jpg" alt="Elden Ring">
+                <div class="game-info">
+                    <h3>Elden Ring</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.999.000đ</span>
+                            <span class="price">1.499.000đ</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/eldenring.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-card">
+                <img src="images/game4.jpg" alt="God of War">
+                <div class="game-info">
+                    <h3>God of War</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.332.000đ</span>
+                            <span class="price">799.000đ</span>
+                            <span class="discount">-40%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/godofwar.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 5 -->
+            <div class="game-card">
+                <img src="images/game5.jpg" alt="Baldur's Gate 3">
+                <div class="game-info">
+                    <h3>Baldur's Gate 3</h3>
+                    <div class="game-meta">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/baldursgate3.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 6 -->
+            <div class="game-card">
+                <img src="images/game6.jpg" alt="Alan Wake 2">
+                <div class="game-info">
+                    <h3>Alan Wake 2</h3>
+                    <div class="game-meta">
+                        <span class="price">1.299.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/alanwake2.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 7 -->
+            <div class="game-card">
+                <img src="images/game7.jpg" alt="Starfield">
+                <div class="game-info">
+                    <h3>Starfield</h3>
+                    <div class="game-meta">
+                        <span class="price">1.999.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/starfield.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 8 -->
+            <div class="game-card">
+                <img src="images/game8.jpg" alt="Lies of P">
+                <div class="game-info">
+                    <h3>Lies of P</h3>
+                    <div class="game-meta">
+                        <span class="price">999.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-detailS/liesofp.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 9 -->
+            <div class="game-card">
+                <img src="images/game9.jpg" alt="Resident Evil 4">
+                <div class="game-info">
+                    <h3>Resident Evil 4</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.499.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-33%</span>
+                        </div>
+                    </div>
+                    <a href="game-detailS/residentevil4.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 10 -->
+            <div class="game-card">
+                <img src="images/game10.jpg" alt="Dead Space">
+                <div class="game-info">
+                    <h3>Dead Space</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.299.000đ</span>
+                            <span class="price">899.000đ</span>
+                            <span class="discount">-31%</span>
+                        </div>
+                    </div>
+                    <a href="game-detailS/deadspace.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 11 -->
+            <div class="game-card">
+                <img src="images/game11.jpg" alt="Hogwarts Legacy">
+                <div class="game-info">
+                    <h3>Hogwarts Legacy</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.799.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-28%</span>
+                        </div>
+                    </div>
+                    <a href="game-detailS/hogwartslegacy.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 12 -->
+            <div class="game-card">
+                <img src="images/game12.jpg" alt="Forspoken">
+                <div class="game-info">
+                    <h3>Forspoken</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.999.000đ</span>
+                            <span class="price">1.499.000đ</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                    </div>
+                    <a href="game-detailS/forspoken.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 13 -->
+            <div class="game-card">
+                <img src="images/game13.jpg" alt="The Last of Us Part I">
+                <div class="game-info">
+                    <h3>The Last of Us Part I</h3>
+                    <div class="game-meta">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-detailS/thelastofus.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 14 -->
+            <div class="game-card">
+                <img src="images/game14.jpg" alt="Atomic Heart">
+                <div class="game-info">
+                    <h3>Atomic Heart</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.499.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-33%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/atomicheart.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 15 -->
+            <div class="game-card">
+                <img src="images/game15.jpg" alt="Wo Long: Fallen Dynasty">
+                <div class="game-info">
+                    <h3>Wo Long: Fallen Dynasty</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.799.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-28%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/wolong.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 16 -->
+            <div class="game-card">
+                <img src="images/game16.jpg" alt="Wild Hearts">
+                <div class="game-info">
+                    <h3>Wild Hearts</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.999.000đ</span>
+                            <span class="price">1.499.000đ</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/wildhearts.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 17 -->
+            <div class="game-card">
+                <img src="images/game17.jpg" alt="Like a Dragon: Ishin!">
+                <div class="game-info">
+                    <h3>Like a Dragon: Ishin!</h3>
+                    <div class="game-meta">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/likeadragon.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 18 -->
+            <div class="game-card">
+                <img src="images/game18.jpg" alt="Octopath Traveler II">
+                <div class="game-info">
+                    <h3>Octopath Traveler II</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.499.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-33%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/octopath2.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 19 -->
+            <div class="game-card">
+                <img src="images/game19.jpg" alt="Company of Heroes 3">
+                <div class="game-info">
+                    <h3>Company of Heroes 3</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.799.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-28%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/companyofheroes3.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 20 -->
+            <div class="game-card">
+                <img src="images/game20.jpg" alt="Sons of the Forest">
+                <div class="game-info">
+                    <h3>Sons of the Forest</h3>
+                    <div class="game-meta">
+                        <span class="price">1.299.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/sonsoftheforest.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game 20 -->
+            <div class="game-card">
+                <img src="images/game21.jpg" alt="TheForest">
+                <div class="game-info">
+                    <h3>The Forest</h3>
+                    <div class="game-meta">
+                        <span class="price">19.990.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/theforest.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 30px; color: #0078f2; font-style: italic;">Các game mới sẽ được cập nhật sớm</p>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="main.html">TRANG CHỦ</a></li>
+                    <li><a href="game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+    function getPrice(priceStr) {
+        return parseInt(priceStr.replace(/\D/g, ''));
+    }
+
+    function sortGames(sortType) {
+        const gameGrid = document.getElementById('game-grid');
+        const gameCards = Array.from(gameGrid.getElementsByClassName('game-card'));
+
+        gameCards.sort((a, b) => {
+            if (sortType === 'price-low') {
+                const priceA = getPrice(a.querySelector('.price').textContent);
+                const priceB = getPrice(b.querySelector('.price').textContent);
+                return priceA - priceB;
+            } 
+            else if (sortType === 'price-high') {
+                const priceA = getPrice(a.querySelector('.price').textContent);
+                const priceB = getPrice(b.querySelector('.price').textContent);
+                return priceB - priceA;
+            }
+            else if (sortType === 'name') {
+                const nameA = a.querySelector('h3').textContent;
+                const nameB = b.querySelector('h3').textContent;
+                return nameA.localeCompare(nameB);
+            }
+            return 0;
+        });
+
+        // Xóa các game card hiện tại
+        while (gameGrid.firstChild) {
+            gameGrid.removeChild(gameGrid.firstChild);
+        }
+
+        // Thêm lại các game card đã sắp xếp
+        gameCards.forEach(card => {
+            gameGrid.appendChild(card);
+        });
+    }
+    </script>
+</body>
+</html>

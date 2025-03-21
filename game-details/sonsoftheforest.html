@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons of the Forest - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game20.jpg" alt="Sons of the Forest">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/sonoftheforest_1.jpg" alt="Sons of the Forest Screenshot 1">
+                    <img src="img/sonoftheforest_2.jpg" alt="Sons of the Forest Screenshot 2">
+                    <img src="img/sonoftheforest_3.jpg" alt="Sons of the Forest Screenshot 3">
+                    <img src="img/sonoftheforest_4.jpg" alt="Sons of the Forest Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Sons of the Forest</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="original-price">799.000đ</span>
+                        <span class="price">599.000đ</span>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Sons of the Forest là phần tiếp theo của tựa game sinh tồn kinh dị The Forest. Trong game, bạn được cử đến một hòn đảo xa xôi để tìm kiếm một tỷ phú mất tích. Tuy nhiên, bạn phát hiện ra rằng hòn đảo này là nơi trú ngụ của những sinh vật đột biến đáng sợ và những bí ẩn kinh hoàng.</p>
+                    <p>Với cơ chế xây dựng và chế tạo nâng cao, hệ thống thời tiết động, chu kỳ ngày đêm thực tế và AI đồng đội thông minh, Sons of the Forest mang đến trải nghiệm sinh tồn kinh dị chân thực và đáng sợ hơn bao giờ hết.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hệ thống xây dựng và chế tạo nâng cao</li>
+                        <li><i class="fas fa-check"></i> Đồ họa và hiệu ứng thời tiết chân thực</li>
+                        <li><i class="fas fa-check"></i> AI đồng đội thông minh (Kelvin)</li>
+                        <li><i class="fas fa-check"></i> Chế độ chơi đơn và co-op</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện bí ẩn và kinh dị hấp dẫn</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-8400 hoặc AMD Ryzen 3 3300X</li>
+                                <li>RAM: 12 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 1060 3GB hoặc AMD Radeon RX 570 4GB</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 20 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-8700K hoặc AMD Ryzen 5 3600X</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 2060 SUPER hoặc AMD Radeon RX 5700 XT</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 20 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(20, 'Sons of the Forest', 599000, 799000, '/images/game20.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

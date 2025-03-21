@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Heart - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game14.jpg" alt="Atomic Heart">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/atomic_1.jpg" alt="Atomic Heart Screenshot 1">
+                    <img src="img/atomic_2.jpg" alt="Atomic Heart Screenshot 2">
+                    <img src="img/atomic_3.jpg" alt="Atomic Heart Screenshot 3">
+                    <img src="img/atomic_4.jpg" alt="Atomic Heart Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Atomic Heart</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="original-price">1.499.000đ</span>
+                        <span class="price">999.000đ</span>
+                        <span class="discount">-33%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Atomic Heart là một game hành động nhập vai đặt trong một thế giới Liên Xô thay thế, nơi robot và công nghệ tiên tiến đã trở thành một phần của cuộc sống hàng ngày. Người chơi vào vai P-3, một đặc vụ tâm thần của chính phủ được giao nhiệm vụ điều tra một cơ sở nghiên cứu bí mật đã mất kiểm soát.</p>
+                    <p>Với lối chơi kết hợp giữa chiến đấu cận chiến, bắn súng và sử dụng năng lực đặc biệt, cùng với cốt truyện đậm chất khoa học viễn tưởng và kinh dị, Atomic Heart mang đến một trải nghiệm game độc đáo với phong cách nghệ thuật và âm nhạc đặc trưng của thời kỳ Soviet.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Thế giới mở với thiết kế độc đáo theo phong cách Soviet-punk</li>
+                        <li><i class="fas fa-check"></i> Hệ thống chiến đấu đa dạng với vũ khí và năng lực</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện phức tạp với nhiều twist bất ngờ</li>
+                        <li><i class="fas fa-check"></i> Đồ họa next-gen với công nghệ ray tracing</li>
+                        <li><i class="fas fa-check"></i> Âm nhạc độc đáo kết hợp nhạc cụ truyền thống và điện tử</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-6600K hoặc AMD Ryzen 5 1600</li>
+                                <li>RAM: 8 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 1060 hoặc AMD Radeon RX 580</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 90 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-8700K hoặc AMD Ryzen 7 2700X</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 2070S hoặc AMD Radeon RX 6700 XT</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 90 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(14, 'Atomic Heart', 999000, 1499000, '/images/game14.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

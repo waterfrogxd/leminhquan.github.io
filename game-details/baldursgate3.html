@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldur's Gate 3 - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game5.jpg" alt="Baldur's Gate 3">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/bd3_1.jpg" alt="Baldur's Gate 3 Screenshot 1">
+                    <img src="img/bd3_2.jpg" alt="Baldur's Gate 3 Screenshot 2">
+                    <img src="img/bd3_3.jpg" alt="Baldur's Gate 3 Screenshot 3">
+                    <img src="img/bd3_4.jpg" alt="Baldur's Gate 3 Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Baldur's Gate 3</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Baldur's Gate 3 là một tựa game nhập vai sử thi từ Larian Studios, dựa trên hệ thống Dungeons & Dragons. Trong game, người chơi sẽ dấn thân vào một cuộc phiêu lưu hoành tráng, nơi mỗi quyết định đều có thể thay đổi số phận của cả thế giới Forgotten Realms.</p>
+                    <p>Game mang đến trải nghiệm nhập vai sâu sắc với hệ thống tùy biến nhân vật phong phú, chiến đấu theo lượt chiến thuật, và vô số lựa chọn trong cách giải quyết nhiệm vụ. Mỗi cuộc đối thoại, mỗi hành động đều có thể dẫn đến những hậu quả không lường trước được.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hệ thống D&D 5e được tái hiện hoàn hảo</li>
+                        <li><i class="fas fa-check"></i> Tùy biến nhân vật với hàng trăm lựa chọn</li>
+                        <li><i class="fas fa-check"></i> Chiến đấu theo lượt chiến thuật sâu sắc</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện phân nhánh với nhiều kết thúc</li>
+                        <li><i class="fas fa-check"></i> Chế độ chơi co-op trực tuyến</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-4690 hoặc AMD FX-8350</li>
+                                <li>RAM: 8 GB</li>
+                                <li>GPU: NVIDIA GTX 970 hoặc AMD RX 480</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 150 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-8700K hoặc AMD Ryzen 5 3600</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA RTX 2060 SUPER hoặc AMD RX 5700 XT</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 150 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(5, 'Baldur\'s Gate 3', 1799000, 1799000, '/images/game5.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

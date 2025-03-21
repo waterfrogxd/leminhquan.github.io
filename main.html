@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterforg Game Store</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="main.html" class="active">TRANG CHỦ</a>
+                <a href="game-site.html">CỬA HÀNG</a>
+                <a href="game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="welcome-banner">
+            <div class="slideshow">
+                <button class="slide-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slide-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slide active">
+                    <div class="banner-content">
+                        <img src="images/banner1.jpg" alt="Game Store Banner" class="banner-image">
+                        <h1>Chào mừng đến với Game Store</h1>
+                        <p>Khám phá thế giới game bản quyền với giá tốt nhất</p>
+                        <a href="game-site.html" class="cta-button">Khám phá ngay</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="banner-content">
+                        <img src="images/banner2.jpg" alt="Hot Games 2024" class="banner-image">
+                        <h1>Game Hot Nhất 2025</h1>
+                        <p>Khám phá những tựa game đang làm mưa làm gió</p>
+                        <a href="game-site.html" class="cta-button">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="banner-content">
+                        <img src="images/banner3.jpg" alt="Special Offers" class="banner-image">
+                        <h1>Ưu Đãi Đặc Biệt</h1>
+                        <p>Giảm giá lên đến 70% cho các tựa game hot</p>
+                        <a href="game-forsale.html" class="cta-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game For Sale Section -->
+    <div class="game-sale-section">
+        <div class="section-header">
+            <h2>GAME FOR SALE</h2>
+            <a href="game-site.html" class="view-all">Xem tất cả <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="images/game1.jpg" alt="Game 1">
+                <div class="game-info">
+                    <h3>Cyberpunk 2077</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">2.598.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-50%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/cyberpunk2077.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game2.jpg" alt="Game 2">
+                <div class="game-info">
+                    <h3>Red Dead Redemption 2</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.427.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/rdr2.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game3.jpg" alt="Game 3">
+                <div class="game-info">
+                    <h3>Elden Ring</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.999.000đ</span>
+                            <span class="price">1.499.000đ</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/eldenring.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game4.jpg" alt="Game 4">
+                <div class="game-info">
+                    <h3>God of War</h3>
+                    <div class="game-meta">
+                        <div class="price-container">
+                            <span class="original-price">1.332.000đ</span>
+                            <span class="price">799.000đ</span>
+                            <span class="discount">-40%</span>
+                        </div>
+                    </div>
+                    <a href="game-details/godofwar.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Hot Mới Nổi Section -->
+    <div class="game-hot-section">
+        <div class="section-header">
+            <h2>KHO GAME ĐÃ LÊN KỆ</h2>
+            <a href="game-site.html" class="view-all">Xem tất cả <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="images/game5.jpg" alt="Game 5">
+                <div class="game-info">
+                    <h3>Baldur's Gate 3</h3>
+                    <div class="game-meta">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/baldursgate3.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game6.jpg" alt="Game 6">
+                <div class="game-info">
+                    <h3>Alan Wake 2</h3>
+                    <div class="game-meta">
+                        <span class="price">1.299.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/alanwake2.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game7.jpg" alt="Game 7">
+                <div class="game-info">
+                    <h3>Starfield</h3>
+                    <div class="game-meta">
+                        <span class="price">1.999.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/starfield.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="images/game8.jpg" alt="Game 8">
+                <div class="game-info">
+                    <h3>Lies of P</h3>
+                    <div class="game-meta">
+                        <span class="price">999.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <a href="game-details/liesofp.html" class="buy-btn-link">
+                        <button class="buy-btn">Mua ngay</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:lnmcgame@gmail.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="main.html">TRANG CHỦ</a></li>
+                    <li><a href="game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

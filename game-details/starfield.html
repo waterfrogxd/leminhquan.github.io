@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfield - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game7.jpg" alt="Starfield">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/starfield_1.jpg" alt="Starfield Screenshot 1">
+                    <img src="img/starfield_2.jpg" alt="Starfield Screenshot 2">
+                    <img src="img/starfield_3.jpg" alt="Starfield Screenshot 3">
+                    <img src="img/starfield_4.jpg" alt="Starfield Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Starfield</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="price">1.999.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Starfield là tựa game nhập vai khoa học viễn tưởng đầy tham vọng từ Bethesda Game Studios. Lấy bối cảnh trong tương lai năm 2330, game đưa người chơi vào cuộc phiêu lưu khám phá vũ trụ rộng lớn với hơn 1000 hành tinh có thể khám phá.</p>
+                    <p>Trong vai một thành viên của tổ chức Constellation, người chơi sẽ khám phá những bí ẩn của thiên hà, tương tác với các phe phái khác nhau, và xây dựng tàu vũ trụ của riêng mình. Mỗi hành tinh đều có môi trường, sinh vật và thách thức độc đáo riêng.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Thế giới mở rộng lớn với hơn 1000 hành tinh</li>
+                        <li><i class="fas fa-check"></i> Hệ thống tùy chỉnh tàu vũ trụ chi tiết</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện phong phú với nhiều lựa chọn</li>
+                        <li><i class="fas fa-check"></i> Chiến đấu trong không gian và trên mặt đất</li>
+                        <li><i class="fas fa-check"></i> Đồ họa next-gen với Creation Engine 2</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-6800K hoặc AMD Ryzen 5 2600X</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 2080 hoặc AMD Radeon RX 6800 XT</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 125 GB SSD</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-8700K hoặc AMD Ryzen 7 3700X</li>
+                                <li>RAM: 32 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 3080 hoặc AMD Radeon RX 6800 XT</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 125 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(7, 'Starfield', 1999000, 1999000, '/images/game7.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

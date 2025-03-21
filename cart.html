@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Game Store</title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="main.html">TRANG CHỦ</a>
+                <a href="game-site.html">CỬA HÀNG</a>
+                <a href="game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="cart-container">
+            <h2 class="section-title">Giỏ Hàng</h2>
+            
+            <div class="cart-items">
+                <!-- Sản phẩm 1 -->
+                <div class="cart-item">
+                    <img src="images/game1.jpg" alt="Cyberpunk 2077">
+                    <div class="item-details">
+                        <h3>Cyberpunk 2077</h3>
+                        <div class="price-container">
+                            <span class="original-price">2.598.000đ</span>
+                            <span class="price">1.299.000đ</span>
+                            <span class="discount">-50%</span>
+                        </div>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="cart-item">
+                    <img src="images/game2.jpg" alt="Red Dead Redemption 2">
+                    <div class="item-details">
+                        <h3>Red Dead Redemption 2</h3>
+                        <div class="price-container">
+                            <span class="original-price">1.427.000đ</span>
+                            <span class="price">999.000đ</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Tạm tính:</span>
+                    <span>2.298.000đ</span>
+                </div>
+                <div class="summary-item">
+                    <span>Giảm giá:</span>
+                    <span>-1.327.000đ</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Tổng cộng:</span>
+                    <span>971.000đ</span>
+                </div>
+                <button class="checkout-btn">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="main.html">TRANG CHỦ</a></li>
+                    <li><a href="game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

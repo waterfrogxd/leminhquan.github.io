@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like a Dragon: Ishin! - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game17.jpg" alt="Like a Dragon: Ishin!">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/ishin_1.jpg" alt="Like a Dragon: Ishin! Screenshot 1">
+                    <img src="img/ishin_2.jpg" alt="Like a Dragon: Ishin! Screenshot 2">
+                    <img src="img/ishin_3.jpg" alt="Like a Dragon: Ishin! Screenshot 3">
+                    <img src="img/ishin_4.jpg" alt="Like a Dragon: Ishin! Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Like a Dragon: Ishin!</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="price">1.799.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Like a Dragon: Ishin! là phiên bản làm lại của tựa game nổi tiếng trong series Yakuza, đưa người chơi trở về thời kỳ cuối thời đại Edo của Nhật Bản. Trong vai Sakamoto Ryoma, một samurai huyền thoại, người chơi sẽ khám phá thành phố Kyo cổ đại và tham gia vào một câu chuyện về danh dự, phản bội và trả thù.</p>
+                    <p>Game kết hợp giữa lối chơi hành động đặc trưng của series với bối cảnh lịch sử Nhật Bản. Người chơi có thể sử dụng nhiều phong cách chiến đấu khác nhau, từ kiếm thuật samurai truyền thống đến các kỹ thuật chiến đấu hiện đại, cùng với hệ thống phát triển nhân vật sâu sắc và nhiều hoạt động phụ thú vị.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bốn phong cách chiến đấu độc đáo</li>
+                        <li><i class="fas fa-check"></i> Đồ họa được làm lại hoàn toàn với Unreal Engine 4</li>
+                        <li><i class="fas fa-check"></i> Thế giới mở sống động với nhiều hoạt động phụ</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện lịch sử hấp dẫn</li>
+                        <li><i class="fas fa-check"></i> Hệ thống nhiệm vụ phụ phong phú</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-3470 hoặc AMD FX-8350</li>
+                                <li>RAM: 8 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 960 hoặc AMD Radeon RX 460</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 60 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-4790 hoặc AMD Ryzen 5 1600</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 2060 hoặc AMD Radeon RX 5700</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 60 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(17, 'Like a Dragon: Ishin!', 1799000, 1799000, '/images/game17.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 

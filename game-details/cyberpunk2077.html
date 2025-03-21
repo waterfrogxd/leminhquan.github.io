@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game1.jpg" alt="Cyberpunk 2077">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/cyberpunk1.jpg" alt="Cyberpunk 2077 Screenshot 1">
+                    <img src="img/cyberpunk2.jpg" alt="Cyberpunk 2077 Screenshot 2">
+                    <img src="img/cyberpunk3.jpg" alt="Cyberpunk 2077 Screenshot 3">
+                    <img src="img/cyberpunk4.jpg" alt="Cyberpunk 2077 Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Cyberpunk 2077</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="original-price">2.598.000đ</span>
+                        <span class="price">1.299.000đ</span>
+                        <span class="discount">-50%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Cyberpunk 2077 là một game nhập vai hành động phiêu lưu mở, lấy bối cảnh tại Night City - một siêu đô thị tương lai đầy tham vọng. Trong thế giới này, sự tiến bộ vượt bậc của công nghệ đã trở thành công cụ để con người tự cải thiện bản thân, nhưng cũng là nguyên nhân dẫn đến sự bất bình đẳng và tham nhũng.</p>
+                    <p>Người chơi sẽ vào vai V - một lính đánh thuê đang tìm kiếm một thiết bị độc nhất vô nhị, chìa khóa để có được sự bất tử. Trong hành trình này, người chơi sẽ phải đối mặt với những quyết định khó khăn, gặp gỡ nhiều nhân vật thú vị và khám phá một thế giới mở rộng lớn với vô số câu chuyện phụ hấp dẫn.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Thế giới mở rộng lớn với Night City</li>
+                        <li><i class="fas fa-check"></i> Hệ thống nhân vật tùy chỉnh chi tiết</li>
+                        <li><i class="fas fa-check"></i> Nhiều cách chơi đa dạng</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện phong phú với nhiều nhánh</li>
+                        <li><i class="fas fa-check"></i> Đồ họa thế hệ mới</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-3570K hoặc AMD FX-8310</li>
+                                <li>RAM: 8 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 780 hoặc AMD Radeon RX 470</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 70 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-4790 hoặc AMD Ryzen 3 3200G</li>
+                                <li>RAM: 12 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 1060 hoặc AMD Radeon RX 590</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 70 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(1, 'Cyberpunk 2077', 1299000, 2598000, '/images/game1.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

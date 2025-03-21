@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forest - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game21.jpg" alt="The Forest">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="img/forest_1.jpg" alt="The Forest Screenshot 1">
+                    <img src="img/forest_2.jpg" alt="The Forest Screenshot 2">
+                    <img src="img/forest_3.jpg" alt="The Forest Screenshot 3">
+                    <img src="img/forest_4.jpg" alt="The Forest Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>The Forest</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="price">19.990.000đ</span>
+                        <span class="hot-badge">Hot</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>The Forest là một game sinh tồn kinh dị đầy thử thách, nơi bạn vào vai Eric Leblanc - người sống sót duy nhất sau một vụ tai nạn máy bay. Trong hành trình tìm kiếm con trai bị mất tích, bạn phải đối mặt với một bộ tộc ăn thịt người đáng sợ và khám phá những bí mật đen tối ẩn giấu trong khu rừng.</p>
+                    <p>Game kết hợp giữa yếu tố sinh tồn và kinh dị một cách hoàn hảo. Người chơi phải thu thập tài nguyên, xây dựng nơi trú ẩn, săn bắt thức ăn và chế tạo vũ khí để tự vệ. Đồng thời, khám phá hệ thống hang động rộng lớn dưới lòng đất để tìm hiểu về số phận của con trai mình và nguồn gốc của những sinh vật kỳ lạ trong rừng.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Thế giới mở với hệ sinh thái động</li>
+                        <li><i class="fas fa-check"></i> Hệ thống xây dựng và chế tạo sâu sắc</li>
+                        <li><i class="fas fa-check"></i> AI thông minh với hành vi phức tạp</li>
+                        <li><i class="fas fa-check"></i> Cốt truyện bí ẩn và hấp dẫn</li>
+                        <li><i class="fas fa-check"></i> Chế độ chơi co-op với bạn bè</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-2500K hoặc AMD FX-8350</li>
+                                <li>RAM: 4 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 560 hoặc AMD Radeon HD 7850</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 20 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-4790K hoặc AMD Ryzen 5 1600</li>
+                                <li>RAM: 8 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 970 hoặc AMD Radeon R9 390</li>
+                                <li>DirectX: Version 11</li>
+                                <li>Storage: 20 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(21, 'The Forest', 19990000, 19990000, '/images/game21.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

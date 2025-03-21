@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Hearts - Game Store</title>
+    <link rel="stylesheet" href="/css/game-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/main.html">TRANG CHỦ</a>
+                <a href="/game-site.html">CỬA HÀNG</a>
+                <a href="/game-news.html">TIN TỨC</a>
+                <a href="#">HỖ TRỢ</a>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" onclick="window.location.href='/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" onclick="window.location.href='/login.html'">ĐĂNG NHẬP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="game-details">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="/images/game16.jpg" alt="Wild Hearts">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="/images/wildhearts_1.jpg" alt="Wild Hearts Screenshot 1">
+                    <img src="/images/wildhearts_2.jpg" alt="Wild Hearts Screenshot 2">
+                    <img src="/images/wildhearts_3.jpg" alt="Wild Hearts Screenshot 3">
+                    <img src="/images/wildhearts_4.jpg" alt="Wild Hearts Screenshot 4">
+                </div>
+            </div>
+
+            <div class="game-info">
+                <h1>Wild Hearts</h1>
+                <div class="game-meta">
+                    <div class="price-container">
+                        <span class="original-price">1.999.000đ</span>
+                        <span class="price">1.499.000đ</span>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5/5)</span>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h2>Mô tả game</h2>
+                    <p>Wild Hearts là một game săn quái vật hoành tráng từ Koei Tecmo và EA, lấy bối cảnh tại một thế giới giả tưởng dựa trên Nhật Bản phong kiến. Trong vai một thợ săn dũng cảm, người chơi sẽ đối đầu với những sinh vật Kemono khổng lồ - những con thú dữ đã hòa mình với thiên nhiên và đang đe dọa sự sống còn của con người.</p>
+                    <p>Game nổi bật với hệ thống Karakuri độc đáo - công nghệ cổ xưa cho phép người chơi tạo ra các công cụ và vũ khí phức tạp để săn bắt quái vật. Kết hợp giữa chiến đấu gay cấn và khả năng chế tạo sáng tạo, Wild Hearts mang đến trải nghiệm săn bắn quái vật mới mẻ và thú vị.</p>
+                </div>
+
+                <div class="game-features">
+                    <h2>Tính năng nổi bật</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hệ thống Karakuri độc đáo để chế tạo vũ khí và công cụ</li>
+                        <li><i class="fas fa-check"></i> Đa dạng quái vật Kemono với thiết kế ấn tượng</li>
+                        <li><i class="fas fa-check"></i> Thế giới mở rộng lớn với nhiều môi trường khác nhau</li>
+                        <li><i class="fas fa-check"></i> Chế độ co-op cho phép chơi cùng bạn bè</li>
+                        <li><i class="fas fa-check"></i> Đồ họa next-gen với hiệu ứng và chi tiết đẹp mắt</li>
+                    </ul>
+                </div>
+
+                <div class="system-requirements">
+                    <h2>Cấu hình yêu cầu</h2>
+                    <div class="requirements-grid">
+                        <div class="minimum">
+                            <h3>Cấu hình tối thiểu</h3>
+                            <ul>
+                                <li>CPU: Intel Core i5-8400 hoặc AMD Ryzen 5 2600</li>
+                                <li>RAM: 12 GB</li>
+                                <li>GPU: NVIDIA GeForce GTX 1060 hoặc AMD Radeon RX 5500 XT</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 80 GB</li>
+                            </ul>
+                        </div>
+                        <div class="recommended">
+                            <h3>Cấu hình khuyến nghị</h3>
+                            <ul>
+                                <li>CPU: Intel Core i7-10700K hoặc AMD Ryzen 5 5600X</li>
+                                <li>RAM: 16 GB</li>
+                                <li>GPU: NVIDIA GeForce RTX 3070 hoặc AMD Radeon RX 6800</li>
+                                <li>DirectX: Version 12</li>
+                                <li>Storage: 80 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="buy-btn" onclick="addToCart(16, 'Wild Hearts', 1499000, 1999000, '/images/game16.jpg')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="#">0569.704.041</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:support@gamestore.com">lnmcgame@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Khu chế xuất Tân Thuận với địa chỉ Z06, đường số 13, P. Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh.</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="/main.html">TRANG CHỦ</a></li>
+                    <li><a href="/game-site.html">CỬA HÀNG</a></li>
+                    <li><a href="/game-news.html">TIN TỨC</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>KẾT NỐI</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Store. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html> 
